@@ -1,0 +1,140 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     HearAttackSet
+Instances:    303
+Attributes:   14
+              age
+              sex
+              cp
+              trtbps
+              chol
+              fbs
+              restecg
+              thalachh
+              exng
+              oldpeak
+              slp
+              caa
+              thall
+              output
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                  Class
+Attribute             1        0
+                 (0.54)   (0.46)
+=================================
+age
+  mean           52.4655     56.6
+  std. dev.       9.5284   7.9344
+  weight sum         165      138
+  precision          1.2      1.2
+
+sex
+  mean            0.5636   0.8261
+  std. dev.       0.4959    0.379
+  weight sum         165      138
+  precision            1        1
+
+cp
+  mean            1.3758   0.4783
+  std. dev.       0.9493   0.9026
+  weight sum         165      138
+  precision            1        1
+
+trtbps
+  mean          129.1273 134.3723
+  std. dev.      16.0421  18.6815
+  weight sum         165      138
+  precision       2.2083   2.2083
+
+chol
+  mean          242.1789 251.1385
+  std. dev.       53.384  49.3271
+  weight sum         165      138
+  precision       2.9007   2.9007
+
+fbs
+  mean            0.1394   0.1594
+  std. dev.       0.3464   0.3661
+  weight sum         165      138
+  precision            1        1
+
+restecg
+  mean            0.5939   0.4493
+  std. dev.       0.5033   0.5394
+  weight sum         165      138
+  precision            1        1
+
+thalachh
+  mean          158.4174 139.1005
+  std. dev.      19.0916  22.5146
+  weight sum         165      138
+  precision       1.4556   1.4556
+
+exng
+  mean            0.1394   0.5507
+  std. dev.       0.3464   0.4974
+  weight sum         165      138
+  precision            1        1
+
+oldpeak
+  mean            0.5868   1.5932
+  std. dev.       0.7744   1.2957
+  weight sum         165      138
+  precision        0.159    0.159
+
+slp
+  mean            1.5939   1.1667
+  std. dev.       0.5918   0.5593
+  weight sum         165      138
+  precision            1        1
+
+caa
+  mean            0.3636   1.1667
+  std. dev.       0.8463   1.0397
+  weight sum         165      138
+  precision            1        1
+
+thall
+  mean            2.1212   2.5435
+  std. dev.       0.4643   0.6823
+  weight sum         165      138
+  precision            1        1
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         255               84.1584 %
+Incorrectly Classified Instances        48               15.8416 %
+Kappa statistic                          0.6776
+Mean absolute error                      0.1886
+Root mean squared error                  0.3532
+Relative absolute error                 38.0222 %
+Root relative squared error             70.9198 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.903    0.232    0.823      0.903    0.861      0.682    0.907     0.918     1
+                 0.768    0.097    0.869      0.768    0.815      0.682    0.907     0.894     0
+Weighted Avg.    0.842    0.170    0.844      0.842    0.840      0.682    0.907     0.907     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 149  16 |   a = 1
+  32 106 |   b = 0
+

@@ -1,0 +1,78 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     MilkQualityDataSet
+Instances:    1059
+Attributes:   8
+              pH
+              Temprature
+              Taste
+              Odor
+              Fat
+              Turbidity
+              Colour
+              Grade
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                  Class
+Variable           high     medium
+==================================
+pH               0.7425     0.7281
+Temprature      -0.4208     -0.606
+Taste           -1.7438    -5.3695
+Odor             2.4973    -3.3819
+Fat              8.2872    -2.5238
+Turbidity       -1.9928    -5.2134
+Colour          -0.0799    -0.8156
+Intercept       25.9375   234.2083
+
+
+Odds Ratios...
+                  Class
+Variable           high     medium
+==================================
+pH               2.1012     2.0712
+Temprature       0.6565     0.5456
+Taste            0.1748     0.0047
+Odor            12.1497      0.034
+Fat           3972.6667     0.0802
+Turbidity        0.1363     0.0054
+Colour           0.9232     0.4424
+
+
+Time taken to build model: 0.14 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         901               85.0803 %
+Incorrectly Classified Instances       158               14.9197 %
+Kappa statistic                          0.773 
+Mean absolute error                      0.1611
+Root mean squared error                  0.2826
+Relative absolute error                 37.0153 %
+Root relative squared error             60.5835 %
+Total Number of Instances             1059     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.840    0.103    0.721      0.840    0.776      0.701    0.928     0.744     high
+                 0.840    0.032    0.935      0.840    0.885      0.829    0.974     0.961     medium
+                 0.867    0.084    0.875      0.867    0.871      0.784    0.934     0.916     low
+Weighted Avg.    0.851    0.070    0.859      0.851    0.853      0.780    0.946     0.890     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 215   7  34 |   a = high
+  41 314  19 |   b = medium
+  42  15 372 |   c = low
+

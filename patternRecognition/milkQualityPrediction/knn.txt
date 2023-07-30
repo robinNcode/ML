@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     MilkQualityDataSet
+Instances:    1059
+Attributes:   8
+              pH
+              Temprature
+              Taste
+              Odor
+              Fat
+              Turbidity
+              Colour
+              Grade
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.29 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1059              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0.0001
+Root mean squared error                  0.0002
+Relative absolute error                  0.0227 %
+Root relative squared error              0.0461 %
+Total Number of Instances             1059     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     high
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     medium
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     low
+Weighted Avg.    1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+ 256   0   0 |   a = high
+   0 374   0 |   b = medium
+   0   0 429 |   c = low
+

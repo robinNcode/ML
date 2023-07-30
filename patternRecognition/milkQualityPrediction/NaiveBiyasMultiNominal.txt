@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesMultinomial 
+Relation:     MilkQualityDataSet
+Instances:    1059
+Attributes:   8
+              pH
+              Temprature
+              Taste
+              Odor
+              Fat
+              Turbidity
+              Colour
+              Grade
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+The independent probability of a class
+--------------------------------------
+high	0.24
+medium	0.35
+low	0.4
+
+The probability of a word given the class
+-----------------------------------------
+	high	medium	low	
+pH	0.02	0.02	0.02	
+Temprature	0.13	0.13	0.16	
+Taste	0	0	0	
+Odor	0	0	0	
+Fat	0	0	0	
+Turbidity	0	0	0	
+Colour	0.83	0.84	0.81	
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         642               60.6232 %
+Incorrectly Classified Instances       417               39.3768 %
+Kappa statistic                          0.3917
+Mean absolute error                      0.2904
+Root mean squared error                  0.3771
+Relative absolute error                 66.7379 %
+Root relative squared error             80.8481 %
+Total Number of Instances             1059     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.379    0.149    0.447      0.379    0.410      0.243    0.850     0.633     high
+                 0.759    0.149    0.736      0.759    0.747      0.606    0.916     0.858     medium
+                 0.608    0.310    0.572      0.608    0.590      0.296    0.811     0.798     low
+Weighted Avg.    0.606    0.214    0.600      0.606    0.602      0.393    0.857     0.779     
+
+=== Confusion Matrix ===
+
+   a   b   c   <-- classified as
+  97  54 105 |   a = high
+   0 284  90 |   b = medium
+ 120  48 261 |   c = low
+

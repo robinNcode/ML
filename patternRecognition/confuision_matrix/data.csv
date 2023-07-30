@@ -1,0 +1,10 @@
+actual,predicted
+Alive,Dead
+Alive,Alive
+Dead,Dead
+Alive,Alive
+Dead,Alive
+Dead,Alive
+Alive,Alive
+Dead,Dead
+Alive,Dead

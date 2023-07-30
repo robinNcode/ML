@@ -1,0 +1,68 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     HearAttackSet
+Instances:    303
+Attributes:   14
+              age
+              sex
+              cp
+              trtbps
+              chol
+              fbs
+              restecg
+              thalachh
+              exng
+              oldpeak
+              slp
+              caa
+              thall
+              output
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 303
+Number of Rules : 22
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 86
+	Merit of best subset found:   86.139
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 1,3,12,13,14
+
+Time taken to build model: 0.28 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.02 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         261               86.1386 %
+Incorrectly Classified Instances        42               13.8614 %
+Kappa statistic                          0.7186
+Mean absolute error                      0.2276
+Root mean squared error                  0.3236
+Relative absolute error                 45.8785 %
+Root relative squared error             64.9787 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.909    0.196    0.847      0.909    0.877      0.721    0.926     0.922     1
+                 0.804    0.091    0.881      0.804    0.841      0.721    0.926     0.903     0
+Weighted Avg.    0.861    0.148    0.863      0.861    0.861      0.721    0.926     0.913     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 150  15 |   a = 1
+  27 111 |   b = 0
+

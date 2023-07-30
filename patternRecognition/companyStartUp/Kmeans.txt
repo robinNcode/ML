@@ -1,0 +1,50 @@
+=== Run information ===
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     CompanyStartUp
+Instances:    50
+Attributes:   4
+              R&DSpend
+              Administration
+              MarketingSpend
+              Profit
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 3
+Within cluster sum of squared errors: 5.977213890507642
+
+Initial starting points (random):
+
+Cluster 0: 91992.39,135495.07,252664.93,134307.35
+Cluster 1: 28663.76,127056.21,201126.82,90708.19
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                Cluster#
+Attribute          Full Data           0           1
+                      (50.0)      (24.0)      (26.0)
+====================================================
+R&DSpend          73721.6156 111005.8971  39305.3558
+Administration   121344.6396 124945.0304 118021.2019
+MarketingSpend   211025.0978 308551.9792 121000.2842
+Profit           112012.6392  143930.745  82549.7723
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0      24 ( 48%)
+1      26 ( 52%)
+
